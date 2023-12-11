@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
+    <title>About me</title>
+</head>
+
+<body>
+    <main data-scroll-container>
+    <div class="transition transition-1 is-active"></div>
+
+    <section>
+        <header>
+            <nav class="navcontainer">
+                <h3 class="logo">VDesign</h3>
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="aboutme.html"  class="current">About me</a></li>
+                    <li><a href="getintouch.html">Get in touch</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    
+        <section data-scroll-section>
+            <article class="main-container-about">
+                <span class="main-title-about">
+                    <h1 data-scroll class="h1-pink-about">Welcome!</h1>
+                    <h3 data-scroll class="text-container-about">Hi my name is Victoria & I'm a frontend web developer!</h3>
+                </span>
+            </article>
+                <img src="" alt="">
+            <article class="secondmain-container-about">
+                <span class="main-title2-about">
+                    <h3 class="h3-pink-about">I recently obtained my diploma at</h3>
+                </span>
+                <img class="arrow-left" src="images/arrow-left-turn-light.png" alt="light pink arrow pointing left">
+                <span class="main-title3-about">
+                    <h3 class="h3-pink-about">Concordia University in UI & Web design.</h3>
+                </span>
+                <img class="arrow-down" src="images/arrow-light.svg" alt="light pink arrow pointing down">
+                <span class="main-title4-about">
+                    <h3 class="h3-pink-about">I recently got accepted in the program</h3>
+                </span>
+                <img class="arrow-right" src="images/arrow-right-turn-light.png" alt="light pink arrow pointing right">
+                <span class="main-title5-about">
+                    <h3 class="h3-pink-about">Full-Stack Web Development</h3>
+                </span>
+            </article>
+        </section>
+
+        <section data-scroll-section class="form-container">
+            <h2>Let's work together!</h2>
+            <form class="form-container" action="Submit">
+                <div class="formbox labelbox">
+                    <label for="firstname">First name</label><br>
+                    <input type="text" name="name" placeholder="John"><br>
+                </div>
+                <div class="formbox labelbox">
+                    <label for="lastname">Last name</label><br>
+                    <input type="text" name="lastname" placeholder="Doe"><br>
+                </div>
+                <div class="formbox labelbox">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" placeholder="john.doetest.com"><br>
+                </div>
+                <div class="formbox labelbox">
+                    <label for="message">Write me a message!</label><br>
+                    <textarea name="message" placeholder="Message"></textarea><br>
+                </div>
+                <button type="button" class="form-btn">Submit</button>            
+            </form>
+        </section>
+
+        <section data-scroll-section class="footer">
+            <h4>©2023 VDesign, All Rights Reserved</h4>
+        </section>
+
+    </main>
+
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+    <script src="Javascript/scripts.js"></script>
+
+</body>
+
+</html>

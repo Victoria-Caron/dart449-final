@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
+    <title>Get in touch</title>
+</head>
+
+<body>
+    <main data-scroll-container>
+        <div class="transition transition-1 is-active"></div>
+
+        <section>
+            <header>
+                <nav class="navcontainer">
+                    <h3 class="logo">VDesign</h3>
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="aboutme.html">About me</a></li>
+                        <li><a href="getintouch.html" class="current">Get in touch</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        
+        <section data-scroll-section class="main-get">
+            <article class="get-box">
+                <h1 data-scroll class="get-subbox1">You made it this far!</h1>
+                <h1 data-scroll class="get-subbox2">Why not collaborate?</h1>
+            </article>
+            <div class="arrow2">
+                <a href="#scroll2">
+                    <img src="images/arrow-light.svg" alt="arrow">
+                </a>
+            </div>
+        </section>
+
+        <section data-scroll-section id="scroll2" class="form-container">
+            <h2 data-scroll class="label-color">Let's work together!</h2>
+            <form class="form-container" action="Submit">
+                <div data-scroll class="formbox labelbox">
+                    <label class="label-color" for="firstname">First name</label><br>
+                    <input class="dark" type="text" name="name" placeholder="John"><br>
+                </div>
+                <div data-scroll class="formbox labelbox">
+                    <label class="label-color" for="lastname">Last name</label><br>
+                    <input type="text" name="lastname" placeholder="Doe"><br>
+                </div>
+                <div data-scroll class="formbox labelbox">
+                    <label class="label-color" for="email">Email</label><br>
+                    <input type="text" name="email" placeholder="john.doetest.com"><br>
+                </div>
+                <div data-scroll class="formbox labelbox">
+                    <label class="label-color" for="message">Write me a message!</label><br>
+                    <textarea name="message" placeholder="Message"></textarea><br>
+                </div>
+                <button data-scroll type="button" class="form-btn-dark">Submit</button>
+            </form>
+        </section>
+
+        <section data-scroll-section class="footer">
+            <h4>©2023 VDesign, All Rights Reserved</h4>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+    <script src="Javascript/scripts.js"></script>
+
+</body>
+
+</html>
