@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main data-scroll-container>
+        <div class="transition transition-1 is-active"></div>
+
+        <section>
+            <header>
+                <nav class="navcontainer">
+                    <h3 class="logo">VDesign</h3>
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html" class="current">Portfolio</a></li>
+                        <li><a href="aboutme.html">About me</a></li>
+                        <li><a href="getintouch.html">Get in touch</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        
+        <section data-scroll-section class="container-title">
+            <article class="subcontainer-title">
+                <h1 data-scroll class="title-portfolio">Portfolio</h1>
+            </article>
+            <article class="subcontainer-subtitle">
+                <h3 data-scroll class="subtitle-portfolio">Discover my <span class="pink-subtitle">creative
+                        projects</span></h3>
+            </article>
+        </section>
+
+        <section data-scroll-section class="contianer-portfolio">
+            <article>
+                <div class="feature-main-container">
+                    <span class="box">
+                        <p class="cursor-comingsoon">Coming soon!</p>
+                        <a data-scroll data-scroll-speed="-1" data-scroll-repeat="true" data-scroll-class="scrollappear"
+                            data-scroll-direction="horizontal" href="#">
+                            <img class="img-feature" src="images/ladies.png" alt="">
+                        </a>
+                    </span>
+                    <span class="box">
+                        <span data-scroll data-scroll-speed="-1" data-scroll-repeat="true"
+                            data-scroll-class="scrollappear" data-scroll-direction="horizontal"
+                            data-scroll-position="right" class="casestudie-subtext-row">
+                            <h2 class="text-feature">Ladies le salon</h2>
+                            <p class="casestudie-year">2024</p>
+                        </span>
+                        <span data-scroll data-scroll-speed="-1" data-scroll-repeat="true"
+                            data-scroll-class="scrollappear" data-scroll-direction="horizontal"
+                            data-scroll-position="left" class="casestudie-subtext-row">
+                            <p>UI | UX</p>
+                            <div class="dot"></div>
+                            <p>Front-End Dev</p>
+                            <div class="dot"></div>
+                            <p>Design System</p>
+                        </span>
+                    </span>
+                </div>
+            </article>
+
+            <article>
+                <div class="feature-main-container-project2">
+                    <span class="box">
+                        <p class="cursor-comingsoon">Coming soon!</p>
+                        <a data-scroll data-scroll-speed="-1" data-scroll-repeat="true" data-scroll-class="scrollappear"
+                            data-scroll-direction="horizontal" href="#">
+                            <img class="img-feature" src="images/ladies.png" alt="">
+                        </a>
+                    </span>
+                    <span class="box">
+                        <span data-scroll data-scroll-speed="-1" data-scroll-repeat="true"
+                            data-scroll-class="scrollappear" data-scroll-direction="horizontal"
+                            data-scroll-position="right" class="casestudie-subtext-row">
+                            <h2 class="text-feature">VDesign</h2>
+                            <p class="casestudie-year">2024</p>
+                        </span>
+                        <span data-scroll data-scroll-speed="-1" data-scroll-repeat="true"
+                            data-scroll-class="scrollappear" data-scroll-direction="horizontal"
+                            data-scroll-position="left" class="casestudie-subtext-row">
+                            <p>UI | UX</p>
+                            <div class="dot"></div>
+                            <p>Full Stack Dev</p>
+                            <div class="dot"></div>
+                            <p>Branding</p>
+                        </span>
+                    </span>
+                </div>
+            </article>
+        </section>
+
+        <section data-scroll-section class="form-container">
+            <h2 data-scroll>Let's work together!</h2>
+            <form class="form-container" action="Submit">
+                <div data-scroll class="formbox labelbox">
+                    <label for="firstname">First name</label><br>
+                    <input type="text" name="name" placeholder="John"><br>
+                </div>
+                <div data-scroll class="formbox labelbox">
+                    <label for="lastname">Last name</label><br>
+                    <input type="text" name="lastname" placeholder="Doe"><br>
+                </div>
+                <div data-scroll class="formbox labelbox">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" placeholder="john.doetest.com"><br>
+                </div>
+                <div data-scroll class="formbox labelbox">
+                    <label for="message">Write me a message!</label><br>
+                    <textarea name="message" placeholder="Message"></textarea><br>
+                </div>
+                <button data-scroll type="button" class="form-btn">Submit</button>
+            </form>
+        </section>
+
+        <section data-scroll-section class="footer">
+            <h4>©2023 VDesign, All Rights Reserved</h4>
+        </section>
+
+    </main>
+
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+    <script src="Javascript/scripts.js"></script>
+</body>
+
+</html>

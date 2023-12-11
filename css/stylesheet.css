@@ -1,0 +1,2162 @@
+@import url("https://use.typekit.net/scx0bil.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================== */
+/* ===Destop version first=== */
+/* ========================== */
+html {
+    background: rgb(61, 70, 77);
+    font-size: calc(15px + 0.390625vw);
+    line-height: 120%;
+    scroll-behavior: smooth;
+}
+
+main {
+    background: rgb(61, 70, 77);
+}
+
+h2,
+h3,
+h4 {
+    color: rgb(246, 230, 237);
+}
+
+header {
+    color: rgb(246, 230, 237);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: "swear-display", serif;
+    font-weight: 600;
+}
+
+section {
+    max-height: 100%;
+}
+
+div {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "swear-display", serif;
+}
+
+h1 {
+    color: rgb(246, 230, 237);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+h2 {
+    color: rgb(246, 230, 237);
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+h3 {
+    color: rgb(246, 230, 237);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+h4 {
+    color: rgb(246, 230, 237);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+p {
+    color: rgb(246, 230, 237);
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 500;
+}
+
+nav{
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+ul {
+    width: 100%;
+    line-height: 160%;
+}
+
+li {
+    text-transform: capitalize;
+    color: rgb(246, 230, 237);
+    text-align: left;
+}
+
+form {
+    width: 60%;
+    margin: 40px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 600px;
+    padding: 10px 5px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "forma-djr-deck", sans-serif;
+    color: rgb(61, 70, 77);
+    background-color: #ffffff;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    width: 600px;
+    color: rgb(61, 70, 77);
+    background-color: rgb(246, 230, 237);
+    outline: none;
+}
+
+label {
+    color: rgb(246, 230, 237);
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 0%;
+}
+
+textarea {
+    width: 600px;
+    height: 100px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    resize: none;
+    color: rgb(61, 70, 77);
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+textarea:focus {
+    color: rgb(61, 70, 77);
+    background-color: rgb(246, 230, 237);
+    outline: none;
+}
+
+.footer {
+    height: auto;
+    display: flex;
+    color: rgb(246, 230, 237);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Psuedo class */
+/* unvisited link */
+a:link {
+    color: rgb(246, 230, 237);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+a:-webkit-any-link {
+    color: rgb(246, 230, 237);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: rgb(246, 230, 237);
+    text-decoration: none;
+    /* background: rgb(246, 230, 237); */
+    text-transform: capitalize;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+/* visited link */
+nav a:visited {
+    color: rgb(246, 230, 237);
+}
+
+/* mouse over link */
+nav a:hover {
+    color: rgb(246, 230, 237);
+    padding: 20px;
+}
+
+/* selected link */
+nav a:active {
+    color: rgb(246, 230, 237);
+}
+
+/* current link */
+nav a.current {
+    color: rgb(255, 0, 127);
+}
+
+/* Page transition */
+.transition-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: rgb(61, 70, 77);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+  }
+  
+  .transition-1.is-active {
+    pointer-events: all;
+    opacity: 1;
+  }
+      
+/* ================ */
+/* ===Index page=== */
+/* ================ */
+
+/* Hamburger menu */
+
+.logo{
+    font-family: "swear-display", serif;
+    color: rgb(246, 230, 237);
+    font-size: 1.3rem;
+    align-items: center;
+    padding-top:40px;
+    padding-left: 30px;
+}
+
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "swear-display", serif;
+    color: rgb(246, 230, 237);
+    font-size: 1.3rem;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+    color: rgb(255, 0, 127);
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: rgb(246, 230, 237);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.button1 {
+    display: inline-block;
+    width: 300px;
+    min-width: 100px;
+    background-color: rgb(246, 230, 237);
+    color: rgb(61, 70, 77);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.button1:hover {
+    background-color: rgb(255, 0, 127);
+    color: rgb(15, 14, 14);
+}
+
+
+/* ============== */
+/* CSS index page */
+/* ============== */
+
+/* flexbox for my body for the homepage */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-hero{
+    display: block;
+}
+
+.header-title{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: rgb(246, 230, 237);
+}
+
+@keyframes shiftleft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-15.5%);
+    }
+}
+
+@keyframes shiftright {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(44%);
+    }
+}
+
+.shiftleft {
+    animation-name: shiftleft;
+    animation-delay: .5s;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+.shiftright {
+    animation-name: shiftright;
+    animation-delay: .5s;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+/* Section 2 - index */
+.quote-container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quotecontainer2 {
+    margin: 100px;
+}
+
+.quote {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(246, 230, 237);
+    color: rgb(246, 230, 237);
+    opacity: 1;
+    transition: 3s ease-in-out;
+}
+
+.textread {
+    animation-name: textread;
+    animation-delay: .2s;
+    animation-duration: 5s;
+}
+
+@keyframes textread {
+    from {
+        color: rgb(246, 230, 237);
+    }
+    to {
+        color: rgb(255, 0, 127);
+    }
+}
+
+/* section 3 - index */
+.main-container {
+    height: 100vh;
+}
+
+.banner {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.color {
+    color: rgb(246, 230, 237);
+    margin-right: 1rem;
+    text-transform: uppercase;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.bar-right {
+    width: 10000px;
+    height: 80px;
+    animation: slide-right 25s linear infinite;
+}
+
+.feature-main-container {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-feature {
+    width: 500px;
+    height: 500px;
+    border-radius: 35px;
+}
+
+.cursor-comingsoon{
+    position: absolute;
+    height: auto;
+    width: auto;
+    padding: 60px 20px;
+    background-color: rgb(61, 70, 77);
+    border-radius: 50%;
+    z-index: 50;
+    font-family: "swear-display", sans-serif;
+}
+
+.text-feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 2.8rem;
+}
+
+.casestudie-year{
+    background-color: rgb(246, 230, 237);
+    color: rgb(61, 70, 77);
+    border-radius: 50%;
+    margin: 0 15px;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.casestudie-subtext-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(246, 230, 237);
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+/* Section 4 - Index */
+.link-work {
+    width: 780px;
+    border: none;
+    text-decoration: none;
+}
+
+.link-work:hover {
+    color: rgb(255, 0, 127);
+    width: 780px;
+    transition: all .5s;
+}
+
+.mainlink-container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-container {
+    width: fit-content;
+}
+
+.linktext {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(246, 230, 237);
+    color: rgb(246, 230, 237);
+}
+
+.arrowleft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    transform: rotate(-40deg);
+}
+
+.arrowright {
+    float: right;
+    padding-left: 50px;
+    transform: rotate(140deg);
+}
+
+/* Section 5 - Index */
+.maincontainer2 {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    width: fit-content;
+    transform: translateX(26%);
+    padding: 40px 0 20px 0;
+}
+
+.box2 {
+    width: fit-content;
+    transform: translateX(55%);
+    padding-bottom: 20px;
+}
+
+.box3 {
+    max-width: fit-content;
+    padding: 40px 100px;
+}
+
+.sub-box3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sub-box4 {
+    padding-bottom: 30px;
+}
+
+.linkl-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.link-learn-box {
+    padding: 10px 20px;
+    background-color: rgb(246, 230, 237);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-learn-text {
+    color: rgb(61, 70, 77);
+}
+
+.link-learn-box:hover {
+    background-color: rgb(255, 0, 127);
+    color: rgb(15, 14, 14);
+    transition: all.5s;
+}
+
+/* Form */
+.form-container {
+    height: auto;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelbox {
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.form-btn {
+    display: inline-block;
+    width: 300px;
+    min-width: 100px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 500;
+    transition: all .3s;
+    background-color: rgb(246, 230, 237);
+    color: rgb(61, 70, 77);
+}
+
+.form-btn:hover {
+    background-color: rgb(255, 0, 127);
+    color: rgb(15, 14, 14);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(246, 230, 237);
+    text-align: center;
+}
+
+/* ========================== */
+/* CSS for the page portfolio */
+/* ========================== */
+
+.container-title{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    bottom: 70px;
+}
+
+.subcontainer-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-portfolio{
+    font-size: 15.5rem;
+    color: rgb(246, 230, 237);
+    cursor: default;
+}
+
+.subcontainer-subtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: relative;
+    bottom: 60px;
+
+    transform: translateX(-5.6%);
+
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.pink-subtitle {
+    color: rgb(255, 0, 127);
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.subtitle-portfolio{
+    color: rgb(246, 230, 237);
+}
+
+.contianer-portfolio{
+    width: 100%;
+    height: auto;
+}
+
+.feature-main-container-project2 {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* =================== */
+/* CSS for my About me */
+/* =================== */
+.main-container-about {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-title-about{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    transform: translateX(10%);
+}
+
+.h1-pink-about{
+    color: rgb(255, 0, 127);
+    opacity: 0;
+
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.secondmain-container-about {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.text-container-about{
+    padding: 60px 0;
+    opacity: 0;
+
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.main-title2-about{
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transform: translateX(17%);
+}
+
+.h3-pink-about{
+    color: rgb(246, 230, 237);
+}
+
+.main-title3-about{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: relative;
+    bottom: 35px;
+
+    transform: translateX(-12%);
+}
+
+.main-title4-about{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    transform: translateX(-13%);
+}
+
+.main-title5-about{
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transform: translateX(19%);
+
+    position: relative;
+    bottom: 85px;
+}
+
+.arrow-left{
+    transform: translateX(200%);
+}
+
+.arrow-down{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    transform: translateX(3700%);
+}
+
+.arrow-right{
+    padding-top: 50px;
+    transform: translateX(380%);
+}
+
+/* ==================*/
+/* Get in touch page */
+/* ================== */
+
+
+
+/* Head - Get in touch */
+.main-get {
+    width: 100%;
+    height: 100vh;
+}
+
+.get-box {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-subbox1 {
+    transform: translateX(-20%);
+    color: rgb(246, 230, 237);
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.get-subbox2 {
+    transform: translateX(20%);
+    color: rgb(246, 230, 237);
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.arrow2 {
+    position: relative;
+    bottom: 200px;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.8s;
+
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+    to{opacity: 1;}
+}
+
+/* Form dark mode*/
+.label-color {
+    color: rgb(246, 230, 237);
+}
+
+.form-btn-dark {
+    display: inline-block;
+    width: 300px;
+    min-width: 100px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 500;
+    transition: all .3s;
+    background-color: rgb(246, 230, 237);
+    color: rgb(61, 70, 77);
+}
+
+.form-btn-dark:hover {
+    background-color: rgb(255, 0, 127);
+    color: rgb(15, 14, 14);
+}
+
+/* ==================== */
+/* ===Tablet version=== */
+/* ==================== */
+@media only screen and (max-width: 1367px) {
+    /* About me */
+    .box2{
+        width: 600px;
+        transform: translateX(40%);
+        padding-bottom: 60px;
+    }
+    
+    .h3-text-media{
+        font-size: 2.3rem;
+    }
+    
+    .h4-text-media{
+        font-size: 1.8rem;
+    }
+    
+    .p-text-media{
+        font-size: 1.3rem;
+        line-height: 120%;
+    }
+
+    .underline{
+        height: 2px;
+        text-decoration: underline;
+        margin-top: 15px;
+    }
+    
+    .sub-box3{
+        padding: 60px 0;
+    }
+    
+    .sub-box4{
+        padding-bottom: 60px;
+    }
+
+    /* Form */
+    label{
+        font-size: 1.5rem;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 800px;
+        padding: 15px 5px;
+        font-size: 1.3rem;
+        transition: 0.5s all;
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 800px;
+        background-color: rgb(246, 230, 237);
+        color: rgb(61, 70, 77);
+    }
+
+    textarea{
+        width: 800px;
+        height: 200px;
+        font-size: 1.3rem;
+    }
+
+    .form-btn{
+        width: 600px;
+        padding: 20px 0;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 1181px) {
+    /* About me */
+    .box2{
+        width: 600px;
+        transform: translateX(40%);
+        padding-bottom: 60px;
+    }
+        
+    .h3-text-media{
+        font-size: 2rem;
+    }
+        
+    .h4-text-media{
+        font-size: 1.5rem;
+    }
+        
+    .p-text-media{
+        font-size: 1.1rem;
+        line-height: 120%;
+    }
+        
+    .sub-box3{
+        padding: 60px 0;
+    }
+        
+    .sub-box4{
+        padding-bottom: 60px;
+    }
+
+    /* Form */
+    label{
+        font-size: 1.1rem;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 600px;
+        padding: 15px 5px;
+        font-size: 1.3rem;
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 600px;
+    }
+
+    textarea{
+        width: 600px;
+        height: 150px;
+        font-size: 1.1rem;
+    }
+
+    .form-btn{
+        width: 500px;
+        padding: 15px 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) {    
+    /* Featured works */
+    .feature-main-container{
+        height: 80vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .box50{
+        width: 100%;
+    }
+    
+    .text-feature{
+        font-size: 3rem;
+    }
+
+    /* About me */
+    .box1{
+        padding: 30px 0 20px 0;
+    }
+
+    .box2{
+        width: 600px;
+        transform: translateX(40%);
+        padding-bottom: 30px;
+    }
+    
+    .h3-text-media{
+        font-size: 2rem;
+    }
+    
+    .h4-text-media{
+        font-size: 1.5rem;
+    }
+    
+    .p-text-media{
+        font-size: 1.3rem;
+        line-height: 120%;
+    }
+    
+    .sub-box3{
+        padding: 30px 0;
+    }
+    
+    .sub-box4{
+        padding-bottom: 30px;
+    }
+
+    /* Form */
+    label{
+        font-size: 1.5rem;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 750px;
+        padding: 15px 5px;
+        font-size: 1.3rem;
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 750px;
+    }
+
+    textarea{
+        width: 750px;
+        height: 200px;
+        font-size: 1.3rem;
+    }
+
+    .form-btn{
+        width: 500px;
+        padding: 20px 0;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    /* ========== */
+    /* Index page */
+    /* ========== */
+    .h1-s1 {
+        font-size: 5.5rem;
+    }
+
+    /* Featured works */
+    .feature-main-container{
+        height: 80vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .box50{
+        width: 100%;
+    }
+
+    .text-feature{
+        font-size: 3rem;
+    }
+
+    /* About me */
+    .box2{
+        width: 500px;
+        transform: translateX(40%);
+    }
+
+    .h3-text-media{
+        font-size: 2.5rem;
+    }
+
+    .h4-text-media{
+        font-size: 2rem;
+    }
+
+    .p-text-media{
+        font-size: 1.3rem;
+        line-height: 120%;
+    }
+
+    .sub-box3{
+        padding: 50px 0;
+    }
+
+    .sub-box4{
+        padding-bottom: 50px;
+    }
+
+    /* Form */
+    label{
+        font-size: 1.5rem;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        width: 600px;
+        padding: 15px 5px;
+        font-size: 1.3rem;
+    }
+    
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 600px;
+    }
+    
+    textarea{
+        width: 600px;
+        height: 200px;
+        font-size: 1.3rem;
+    }
+    
+    .form-btn{
+        width: 400px;
+        padding: 15px 0;
+        font-size: 1.6rem;
+    }    
+}
+
+/* ==================== */
+/* ===Mobile version=== */
+/* ==================== */
+
+@media only screen and (max-width: 933px) {
+    /* ========== */
+    /* Index page */
+    /* ========== */
+
+    /* Hamburger menu */
+    /*Stying for small screens*/
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: rgba(15, 14, 14, .97);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        justify-content: space-evenly;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(2000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    
+    li.fade{
+        opacity: 1;
+    }
+
+    /* Quote */
+    .quote{
+        font-size: 2rem;
+    }
+
+    /* Featured works */
+    .feature-main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box{
+        padding-top: 15px;
+    }
+
+    .text-feature{
+        font-size: 3rem;
+    }
+
+    .casestudie-year{
+        font-size: 2rem;
+    }
+
+    .casestudie-media833px{
+        font-size: 1.3rem;
+        padding: 20px 0;
+    }
+
+    .img-feature{
+        width: 600px;
+        height: 600px;
+    }
+
+    /* Explore more */
+    .linktext{
+        font-size: 2.2rem;
+    }
+
+    /* About me */
+    .main-container{
+        height: auto;
+    }
+
+    .box2{
+        width: 500px;
+        transform: translateX(40%);
+    }
+
+    .h3-text-media{
+        font-size: 1.5rem;
+    }
+
+    .h4-text-media{
+        font-size: 1.3rem;
+    }
+
+    .p-text-media{
+        font-size: 1rem;
+        line-height: 120%;
+    }
+
+    .sub-box3{
+        padding: 50px 0;
+    }
+
+    .sub-box4{
+        padding-bottom: 50px;
+    }
+
+    /* Form */
+
+    .h2-form{
+        font-size: 2rem;
+    }
+    label{
+        font-size: 1.1rem;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        width: 600px;
+        padding: 15px 5px;
+        font-size: 1rem;
+    }
+    
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 600px;
+    }
+    
+    textarea{
+        width: 600px;
+        height: 150px;
+        font-size: 1.3rem;
+    }
+    
+    .form-btn{
+        width: 300px;
+        padding: 15px 0;
+        font-size: 1.2rem;
+    }    
+}
+
+@media only screen and (max-width: 897px) {
+    /* ========== */
+    /* Index page */
+    /* ========== */
+    .header-title{
+        font-size: 4rem;
+    }
+
+    .quote{
+        font-size: 2.5rem;
+    }
+
+    /* Featured works */
+    .feature-main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-feature{
+        font-size: 2.5rem;
+    }
+
+    .casestudie-year{
+        font-size: 1.3rem;
+    }
+
+    .casestudie-media833px{
+        font-size: 1.3rem;
+        padding: 20px 0;
+    }
+
+    .cursor-comingsoon{
+        font-size: 1.5rem;
+        padding: 80px 20px;
+    }
+
+    /* Explore more - Index */
+
+    .arrowright{
+        width: 65px;
+        height: 65px;
+    }
+
+    .arrowleft{
+        width: 65px;
+        height: 65px;
+    }
+
+    .linktext{
+        font-size: 2.5rem;
+    }
+
+    /* About me - Index */
+
+    .h3-text-media{
+        font-size: 2rem;
+    }
+
+    .h4-text-media{
+        font-size: 2rem;
+    }
+
+    .p-text-media{
+        font-size: 1.5rem;
+    }
+
+    .sub-box3{
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .sub-box4{
+        padding-bottom: 50px;
+    }
+
+    /* Form */
+    label{
+        font-size: 1.5rem;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        width: 500px;
+        padding: 15px 5px;
+        font-size: 1rem;
+    }
+    
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 500px;
+    }
+    
+    textarea{
+        width: 500px;
+        height: 150px;
+        font-size: 1rem;
+    }
+    
+    .h2-form{
+        font-size: 2rem;
+    }
+
+    .form-btn{
+        width: 300px;
+        padding: 15px 0;
+        font-size: 1.4rem;
+    } 
+    
+    label{
+        font-size: 1.3rem;
+    }
+
+    input{
+        font-size: 1.3rem;
+    }
+
+    .footer-text{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 668px) {
+    /* ========== */
+    /* Index page */
+    /* ========== */
+    .h1-s1 {
+        font-size: 4rem;
+    }
+
+    .quote{
+        font-size: 1.8rem;
+    }
+
+    /* Featured works */
+    .feature-main-container{
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .box50{
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .text-feature{
+        font-size: 2.5rem;
+    }
+
+    .img-feature{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Explore more */
+
+    .arrowright{
+        width: 65px;
+        height: 65px;
+    }
+
+    .arrowleft{
+        width: 65px;
+        height: 65px;
+    }
+
+    .linktext{
+        font-size: 2rem;
+    }
+
+
+    /* About me */
+    .main-container{
+        height: auto;
+    }
+
+    .box1{
+        width: 500px;
+        transform: none;
+        margin-left: 100px;
+    }
+
+    .box2{
+        width: 500px;
+        transform: none;
+        margin-left: 100px;
+    }
+
+    .h3-text-media{
+        font-size: 2rem;
+    }
+
+    .h4-text-media{
+        font-size: 1.5rem;
+    }
+
+    .p-text-media{
+        font-size: 1rem;
+    }
+
+    .box3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sub-box3{
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .sub-box4{
+        padding-bottom: 50px;
+    }
+
+    /* Form */
+    label{
+        font-size: 1.5rem;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        width: 500px;
+        padding: 15px 5px;
+        font-size: 1rem;
+    }
+    
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 500px;
+    }
+    
+    textarea{
+        width: 500px;
+        height: 150px;
+        font-size: 1rem;
+    }
+    
+    .h2-form{
+        font-size: 2rem;
+    }
+
+    .form-btn{
+        width: 300px;
+        padding: 15px 0;
+        font-size: 1.4rem;
+    } 
+    
+    label{
+        font-size: 1.3rem;
+    }
+
+    input{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 668px) {
+    /* ========== */
+    /* Index page */
+    /* ========== */
+
+    .header-title{
+        font-size: 3rem;
+    }
+
+    .quote{
+        font-size: 1.8rem;
+    }
+
+    /* Featured works */
+    .feature-main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-feature{
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-feature{
+        font-size: 1.8rem;
+    }
+
+    .casestudie-year{
+        font-size: 1rem;
+    }
+
+    .casestudie-media833px{
+        font-size: 1.3rem;
+        padding: 20px 0;
+    }
+
+    /* Explore more */
+
+    .arrowright{
+        width: 65px;
+        height: 65px;
+    }
+
+    .arrowleft{
+        width: 65px;
+        height: 65px;
+    }
+
+    .linktext{
+        font-size: 2rem;
+    }
+
+
+    /* About me */
+    .main-container{
+        height: auto;
+    }
+
+
+    .box2{
+        width: 500px;
+        transform: none;
+        margin-left: 100px;
+    }
+
+    .h3-text-media{
+        font-size: 2rem;
+    }
+
+    .h4-text-media{
+        font-size: 1.5rem;
+    }
+
+    .p-text-media{
+        font-size: 1rem;
+    }
+
+    .box3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sub-box3{
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .sub-box4{
+        padding-bottom: 50px;
+    }
+
+    /* Form */
+    label{
+        font-size: 1.5rem;
+    }
+    
+    input[type=text],
+    input[type=email] {
+        width: 500px;
+        padding: 15px 5px;
+        font-size: 1rem;
+    }
+    
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 500px;
+    }
+    
+    textarea{
+        width: 500px;
+        height: 150px;
+        font-size: 1rem;
+    }
+    
+    .h2-form{
+        font-size: 2rem;
+    }
+
+    .form-btn{
+        width: 300px;
+        padding: 15px 0;
+        font-size: 1.4rem;
+    } 
+    
+    label{
+        font-size: 1.3rem;
+    }
+
+    input{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 431px) {
+    /* ========== */
+    /* Index page */
+    /* ========== */
+
+    /* Index-Header */
+    .header-title{
+        font-size: 2rem;
+    }
+
+    /* Quote */
+    .quotecontainer2{
+        margin: 50px;
+    }
+
+    .quote{
+        font-size: 1.5rem;
+    }
+
+    /* Feature project */
+
+    .bar-right{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .color{
+        font-size: 2rem;
+    }
+    .feature-main-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cursor-comingsoon{
+        font-size: 1rem;
+        padding: 50px 20px;
+    }
+
+    .text-feature{
+        font-size: 1.5rem;
+    }
+
+    .casestudie-media833px{
+        flex-direction: column;
+    }
+
+    .dot{
+        width: 0;
+        height: 0;
+    }
+
+    .description-case-media-833px{
+        padding: 10px 0;
+    }
+
+    .mainlink-container{
+        width: 100%;
+    }
+
+    .linktext{
+        font-size: 1.3rem;
+    }
+
+    .arrowright{
+        width: 65px;
+        height: 65px;
+    }
+
+    .arrowleft{
+        width: 65px;
+        height: 65px;
+    }
+
+    .img-feature{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* About me */
+    .main-container{
+        height: auto;
+        width: auto;
+    }
+
+    .box1{
+        width: auto;
+        transform: none;
+        margin: 0;
+        padding: 30px 20px 10px 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .h3-text-media{
+        transform: none;
+        font-size: 1.5rem;
+    }
+
+    .box2{
+        width: auto;
+        padding: 0 40px 20px 20px;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .h4-text-media{
+        font-size: 1rem;
+    }
+
+    .box3{
+        padding: 20px;
+        align-items: flex-end;
+    }
+    .sub-box3{
+        padding: 20px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .h5-text-media{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .sub-box4{
+        padding-bottom: 20px;
+    }
+
+    .p-text-media{
+        font-size: .8rem;
+    }
+
+    /* Form */
+    .form-container{
+        margin: 40px 20px 10 20px;
+    }
+    .h2-form{
+        font-size: 1.8rem;
+    }
+    label{
+        font-size: 1.1rem;
+    }
+        
+    input[type=text],
+    input[type=email] {
+        width: 300px;
+        padding: 15px 5px;
+        font-size: 1rem;
+    }
+        
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 300px;  
+    }
+        
+    textarea{
+        width: 300px;
+        height: 100px;
+        font-size: 1rem;
+    }
+        
+    .form-btn{
+        width: 200px;
+        padding: 5px 0;
+        font-size: 1.2rem;
+    }    
+    
+    /* Footer */
+    .footer-h4{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+    /* ========== */
+    /* Index page */
+    /* ========== */
+
+    /* Index-Header */
+    .h1-s1{
+        font-size: 2.8rem;
+    }
+
+    /* Quote */
+    .quotecontainer2{
+        margin: 30px;
+    }
+
+    .quote{
+        font-size: 1.5rem;
+    }
+
+    /* Feature project */
+
+    .bar-right{
+        padding-bottom: 30px;
+    }
+
+    .feature-main-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .casestudie-media833px{
+        padding-top: 5px;
+    }
+
+    .box{
+        padding: 10px;
+    }
+
+    .text-feature{
+        font-size: 2rem;
+    }
+
+    .mainlink-container{
+        width: 100%;
+    }
+
+    .linktext{
+        font-size: 1.5rem;
+    }
+
+    .arrowright{
+        width: 65px;
+        height: 65px;
+    }
+
+    .arrowleft{
+        width: 65px;
+        height: 65px;
+    }
+
+    .img-feature{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* About me */
+    .color{
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    }
+    .box1{
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .h3-text-media{
+        font-size: 1.8rem;
+    }
+
+    .box2{
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .h4-text-media{
+        font-size: 1.2rem;
+    }
+
+    .box3{
+        width: 100%;
+        padding: 30px;
+    }
+    .sub-box3{
+        padding: 20px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .h5-text-media{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .sub-box4{
+        padding-bottom: 20px;
+    }
+
+    .p-text-media{
+        font-size: 1rem;
+    }
+
+    /* Form */
+    .form-container{
+        margin: 40px 20px 10 20px;
+    }
+    .h2-form{
+        font-size: 1.8rem;
+    }
+    label{
+        font-size: 1.1rem;
+    }
+        
+    input[type=text],
+    input[type=email] {
+        width: 300px;
+        padding: 15px 5px;
+        font-size: 1rem;
+    }
+        
+    input[type=text]:focus,
+    input[type=email]:focus {
+        width: 300px;  
+    }
+        
+    textarea{
+        width: 300px;
+        height: 100px;
+        font-size: 1rem;
+    }
+        
+    .form-btn{
+        width: 200px;
+        padding: 5px 0;
+        font-size: 1.2rem;
+    }    
+    
+    /* Footer */
+    .footer{
+        padding: 0 30px 10px 30px;
+    }
+
+    .footer-text{
+        font-size: 1.2rem;
+    }
+}
+
+/* Keep this at the bottom of the css */
+.scrollappear{
+    opacity: 1;
+}
