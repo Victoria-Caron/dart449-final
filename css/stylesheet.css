@@ -473,8 +473,35 @@ nav a.current {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.box-feature{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transform: translateX(11%);
+}
+
+.box-feature-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-right: 40px;
+}
+
+.box-feature-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transform: translateX(35%);
 }
 
 .img-feature {
@@ -485,19 +512,28 @@ nav a.current {
 
 .cursor-comingsoon{
     position: absolute;
-    height: auto;
-    width: auto;
-    padding: 60px 20px;
+    transform: translateX(-100%);
+    padding: 70px 20px;
     background-color: rgb(61, 70, 77);
     border-radius: 50%;
     z-index: 50;
     font-family: "swear-display", sans-serif;
 }
 
+.cursor-comingsoon-feature{
+    position: absolute;
+    padding: 70px 20px;
+    background-color: rgb(61, 70, 77);
+    border-radius: 50%;
+    z-index: 50;
+    font-family: "swear-display", sans-serif;
+
+}
+
 .text-feature {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 
     font-size: 2.8rem;
 }
@@ -585,7 +621,7 @@ nav a.current {
 
 .box1 {
     width: fit-content;
-    transform: translateX(26%);
+    transform: translateX(35%);
     padding: 40px 0 20px 0;
 }
 
@@ -597,7 +633,7 @@ nav a.current {
 
 .box3 {
     max-width: fit-content;
-    padding: 40px 100px;
+    padding: 40px 140px;
 }
 
 .sub-box3 {
